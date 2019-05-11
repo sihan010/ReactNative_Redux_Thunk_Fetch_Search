@@ -1,0 +1,4 @@
+export const FETCH_ALBUM_DATA = "FETCH_ALBUM_DATA";
+export const SEARCH_ALBUM = "SEARCH_ALBUM";
+export const LOADING_TRUE = "LOADING_TRUE";
+export const LOADING_FALSE = "LOADING_FALSE";
