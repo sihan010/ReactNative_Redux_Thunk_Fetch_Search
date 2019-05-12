@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { TextInput } from 'react-native';
+import { View, TextInput } from 'react-native';
 import { connect } from 'react-redux';
 import { searchAlbums } from '../actions/album_actions'
+import Icon from 'react-native-vector-icons/Ionicons'
 
 class Search extends Component {
     constructor(props) {
@@ -20,19 +21,24 @@ class Search extends Component {
 
     render() {
         return (
-            <TextInput
-                style={styles.searchBar}
-                placeholder="Search"
-                value={this.state.searchValue}
-                onChangeText={(v) => this.handleSearchInput(v)}
-            />
+            <View style={styles.searchBar}>
+                <Icon name="ios-search" color="#fff" size={20} />
+                <TextInput
+                    placeholder="Search"
+                    value={this.state.searchValue}
+                    onChangeText={(v) => this.handleSearchInput(v)}
+                />
+            </View>
+            
         )
     }
 }
 
 const styles = {
     searchBar: { 
-        fontSize: 18,
+        flexDirection:'row',
+        alignItems: 'center',
+        fontSize: 20,
         fontFamily:"Over" 
     }
 }

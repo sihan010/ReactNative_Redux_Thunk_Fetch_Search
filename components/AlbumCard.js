@@ -41,12 +41,16 @@ const styles = {
     thumbnail: {
         height: 100,
         width: 100,
+        borderWidth: 2,
+        borderColor:'#1A5276',
         borderRadius: 5
     },
     banner: {
         height: 200,
         width: '100%',
         marginTop: 10,
+        borderWidth: 2,
+        borderColor:'#1A5276',
         borderRadius: 5
     },
     title: {
